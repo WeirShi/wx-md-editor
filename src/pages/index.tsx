@@ -1,8 +1,8 @@
 import { useCallback, useState } from 'react';
 import Editor from '@/components/editor';
 import Header from '@/components/header';
-import Preview from '@/components/preview';
 import 'bytemd/dist/index.min.css';
+import 'antd/dist/antd.css';
 import { StyledWrapper, StyledMainWrapper } from './styles';
 
 export default function IndexPage() {
@@ -17,7 +17,6 @@ export default function IndexPage() {
       <Header />
       <StyledMainWrapper>
         <Editor handleEditorChange={handleEditorChange} />
-        <Preview value={value} />
       </StyledMainWrapper>
     </StyledWrapper>
   );
